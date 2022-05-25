@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #C84B31;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    background-color: #2D4263;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
