@@ -19,6 +19,9 @@ body {
     background-image: linear-gradient(to right, #6FB2D2, #85C88A);
 }
 
+
+/* Cart  */
+
 .cart {
     margin: 120px auto;
     padding: 20px;
@@ -28,6 +31,9 @@ body {
     background-color: #272d40;
     border-radius: 15px;
 }
+
+
+/* Cart Icon */
 
 .cart__icon {
     font-size: 2.5rem;
@@ -47,7 +53,13 @@ body {
     cursor: pointer;
 }
 
+
+/* Cart view */
+
 .cart__view {}
+
+
+/* Cart image */
 
 .cart__image {
     width: 90%;
@@ -60,6 +72,9 @@ body {
     object-fit: cover;
     transition: all .5s;
 }
+
+
+/* Cart title, price */
 
 .cart:hover .cart__hero {
     transition: all .5s;
@@ -78,7 +93,16 @@ body {
     color: var(--primary-color);
 }
 
-.cart__info {}
+
+/* Cart info */
+
+.cart__info {
+    margin-top: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: all .5s;
+}
 
 .cart__size,
 .cart__color {
@@ -89,12 +113,18 @@ body {
     cursor: pointer;
 }
 
+
+/* Cart number */
+
 .cart__size-number {
     padding: 2px 12px;
     background-color: #454b5e;
     margin-left: 8px;
     cursor: pointer;
 }
+
+
+/* Cart color */
 
 .cart__color-item {
     width: 2rem;
@@ -115,6 +145,9 @@ body {
     background-color: black;
 }
 
+
+/* Cart button */
+
 .cart__action {}
 
 .cart__buy-cart,
@@ -132,6 +165,9 @@ body {
     cursor: pointer;
 }
 
+
+/* Cart transition */
+
 .cart:hover .cart__image>img {
     transform: rotate(-20deg);
 }
@@ -140,19 +176,14 @@ body {
     transform: translate(-10px, -90px);
 }
 
-.cart__info {
-    margin-top: 4rem;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(100%);
-    transition: all .5s;
-}
-
 .cart:hover .cart__info {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
+
+
+/* Cart active */
 
 .cart__number--active {
     background-color: var(--primary-color);
