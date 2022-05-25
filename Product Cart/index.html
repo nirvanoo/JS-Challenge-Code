@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Product Cart</title>
+</head>
+
+<body>
+    <div class="cart">
+        <div class="cart__icon">
+            <div class="cart__heart">
+                <i class="bx bx-heart"></i>
+            </div>
+            <div class="cart__cart">
+                <i class="bx bx-cart"></i>
+            </div>
+        </div>
+        <div class="cart__view">
+            <div class="cart__image">
+                <img src="./img/nikezoom.png" alt="Nike Shoe" />
+            </div>
+            <div class="cart__hero">
+                <div class="cart__title">Nike Zoom KD 12</div>
+                <div class="cart__price">$199</div>
+
+            </div>
+            <div class="cart__info">
+                <div class="cart__size">
+                    <h3 class="cart__size-heading">Size</h3>
+                    <span class="cart__size-number">6</span>
+                    <span class="cart__size-number">7</span>
+                    <span class="cart__size-number">8</span>
+                    <span class="cart__size-number">9</span>
+                </div>
+                <div class="cart__color">
+                    <h3 class="cart__color-heading">Color</h3>
+                    <div class="cart__color-item cart__color--green"></div>
+                    <div class="cart__color-item cart__color--red"></div>
+                    <div class="cart__color-item cart__color--black"></div>
+                </div>
+                <div class="cart__action">
+                    <button class="cart__buy-cart">
+                        Buy Now
+                    </button>
+                    <button class="cart__add-cart">
+                        Add Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./process.js"></script>
+</body>
+
+</html>
