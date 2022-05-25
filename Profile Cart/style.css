@@ -124,22 +124,33 @@ a {
 
 @media screen and (max-width: 800px) {
     .cart {
-        width: 100%;
+        width: 60%;
         max-width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
     .cart__item {
-        width: 70%;
+        width: 100%;
+    }
+    .cart__image img {
+        object-fit: cover;
+        object-position: center;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
+    .cart {
+        width: 100%;
+    }
     .cart__item {
         width: 90%;
     }
     .cart__contact-link {
         width: 90%;
+    }
+    .cart__image img {
+        object-fit: cover;
+        object-position: center;
     }
 }
