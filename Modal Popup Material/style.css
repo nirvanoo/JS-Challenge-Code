@@ -2,6 +2,9 @@
     --primary-color: #C84B31;
 }
 
+
+/* Reset CSS */
+
 * {
     padding: 0;
     margin: 0;
@@ -27,4 +30,105 @@ a {
     text-decoration: none;
     color: #fff;
     display: inline-block;
+}
+
+img {
+    display: block;
+}
+
+
+/* Common */
+
+.btn {
+    color: #2D4263;
+    border: none;
+    outline: none;
+    width: 15rem;
+    height: 5rem;
+    border-radius: .5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* ----------------------------- */
+
+
+/* Body */
+
+body {
+    background-image: linear-gradient(to top right, #35D0BA, #FFCD3C);
+    background-repeat: no-repeat;
+}
+
+.modal__btn-open {
+    color: #FF9234;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.modal__inner {
+    width: 40rem;
+    background-color: #fff;
+    margin: 20rem auto 0;
+    border-radius: 0.5rem;
+}
+
+.modal__header,
+.modal__body,
+.modal__footer {
+    padding: 1rem;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF9234;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.modal__close-icon {
+    font-size: 2rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    cursor: pointer;
+}
+
+.modal__body {}
+
+.modal__heading {
+    color: #FF9234;
+}
+
+.modal__content {
+    color: #2D4263;
+}
+
+.modal__footer {
+    display: flex;
+}
+
+.modal__close-btn {
+    width: 6rem;
+    height: 3rem;
+    background-color: #FF9234;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-left: auto;
 }
