@@ -4,17 +4,13 @@ let closeIcon = document.querySelector(".modal__close-icon");
 let closeBtn = document.querySelector(".modal__close-btn");
 let modalInner = document.querySelector(".modal__inner");
 
-openModalBtn.onclick = function() {
-    modal.classList.add("open");
+let toggleShow = function() {
+    modal.classList.toggle("open");
 }
 
-closeIcon.onclick = function() {
-    modal.classList.remove("open");
-}
-
-closeBtn.onclick = function() {
-    modal.classList.remove("open");
-}
+openModalBtn.onclick = toggleShow;
+closeIcon.onclick = toggleShow;
+closeBtn.onclick = toggleShow;
 
 modal.onclick = function() {
     this.addEventListener('click', function() {
