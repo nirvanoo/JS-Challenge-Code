@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    background-color: #2D4263;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+
+/* Search */
+
+.search__form {
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.5s;
+    border: 1px solid #eee;
+}
+
+.search__input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    flex: 1;
+    display: block;
+}
+
+.search__button {
+    display: block;
+    height: 4rem;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: auto;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: all 0.5s;
+}
+
+.search__icon {
+    line-height: 4rem;
+    font-size: 2rem;
+    background-color: #ccc;
+    color: #2D4263;
+    width: 4rem;
+}
+
+
+/* Action */
+
+.search__form--open {
+    width: 30rem;
+}
+
+.search__input--open {
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
