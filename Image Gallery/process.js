@@ -6,47 +6,42 @@ let prevBtn = document.querySelector(".slider__prev");
 let nextBtn = document.querySelector(".slider__next");
 let currentIndex;
 
-function showOnClick(imageArr, imageShow, slide) {
-    let len = imageArr.length;
-    for (let i = 0; i < len; i++) {
-        imageArr[i].onclick = function() {
-            currentIndex = i;
-            slide.classList.add("show");
-            imageShow.src = imageArr[i].src
-            hideOrShow();
-        }
+function show() {
+    if (currentIndex == 0) {
+        prevBtn.classList.add("hidden");
+    } else {
+        prevBtn.classList.remove("hidden");
     }
+    if (currentIndex == images.length - 1) {
+        nextBtn.classList.add("hidden");
+    } else {
+        nextBtn.classList.remove("hidden");
+    }
+    imageSlider.src = images[currentIndex].src;
+    slider.classList.add("show");
 }
 
-function checkIndex(index, length, btn) {
-    if (index == length - 1 && btn == 'next' || index == 0 && btn == 'prev') {
-        return true;
-    }
-    return false;
+closeSlider.onclick = function() {
+    slider.classList.remove("show");
 }
 
-function hideOrShow() {
-    checkIndex(currentIndex, images.length, 'next') ? nextBtn.classList.add("hidden") : nextBtn.classList.remove("hidden");
-    checkIndex(currentIndex, images.length, 'prev') ? prevBtn.classList.add("hidden") : prevBtn.classList.remove("hidden");
-}
-
-function closeSlide() {
-    closeSlider.onclick = function() {
-        slider.classList.remove("show");
+images.forEach((item, index) => {
+    item.onclick = function() {
+        currentIndex = index;
+        show();
     }
-}
+});
 
 prevBtn.onclick = function() {
-    imageSlider.src = images[currentIndex - 1].src;
-    currentIndex -= 1;
-    hideOrShow();
+    if (currentIndex > 0) {
+        currentIndex--;
+        show();
+    }
 }
 
 nextBtn.onclick = function() {
-    imageSlider.src = images[currentIndex + 1].src;
-    currentIndex += 1;
-    hideOrShow();
+    if (currentIndex < images.length - 1) {
+        currentIndex++;
+        show();
+    }
 }
-
-showOnClick(images, imageSlider, slider);
-closeSlide();
