@@ -29,60 +29,44 @@ a {
 /* Search */
 
 .search__form {
-    display: flex;
-    align-items: center;
-    width: 4rem;
     height: 4rem;
-    background-color: #fff;
-    border-radius: 5px;
+    width: 4rem;
+    position: relative;
+    border-radius: 0.5rem;
     overflow: hidden;
     transition: all 0.5s;
-    border: 1px solid #eee;
 }
 
 .search__input {
-    width: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 5rem 1rem 2rem;
+    font-family: inherit;
     outline: none;
     border: none;
-    font-size: 1.8rem;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-left: 0rem;
-    padding-right: 0rem;
-    flex: 1;
-    display: block;
+    font-size: 1.6rem;
 }
 
 .search__button {
-    display: block;
+    display: inline-block;
+    width: 4rem;
     height: 4rem;
+    font-size: 2rem;
+    line-height: 4rem;
     text-align: center;
     border-radius: 5px;
-    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
     cursor: pointer;
-    margin-left: auto;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    transition: all 0.5s;
 }
 
 .search__icon {
-    line-height: 4rem;
-    font-size: 2rem;
-    background-color: #ccc;
     color: #2D4263;
-    width: 4rem;
+    font-weight: 600;
 }
 
-
-/* Action */
-
-.search__form--open {
-    width: 30rem;
-}
-
-.search__input--open {
-    width: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.open {
+    width: 25rem;
 }
