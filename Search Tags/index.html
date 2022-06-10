@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Search Tags</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="tags">
+            <div class="tags__title">
+                Search Tags
+            </div>
+            <div class="tags__container">
+                <div class="tags__list">
+                    <div class="tags__item hidden">
+                        <span class="tags__name"></span>
+                        <i class='bx bx-x tags__icon'></i>
+                    </div>
+                </div>
+                <input type="text" name="tag" id="tag" class="tags__input" placeholder="Type and enter...">
+            </div>
+            <button class="tags__remove-all">Remove All</button>
+        </div>
+    </div>
+</body>
+<script src="./process.js"></script>
+
+</html>
