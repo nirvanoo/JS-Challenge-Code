@@ -1,9 +1,10 @@
 let tagInput = document.querySelector(".tags__input");
-let tagItem = document.querySelector(".tags__item");
 let tagList = document.querySelector(".tags__list");
-let tagIcons = document.querySelectorAll(".tags__icon");
+// let tagIcons = document.querySelectorAll(".tags__icon");
+// let tagItem = document.querySelector(".tags__item");
 let removeBtn = document.querySelector(".tags__remove-all");
-
+let tags = [];
+/* 
 tagInput.addEventListener("keydown", e => {
     if (e.which == "13" && tagInput.value !== "") {
         let clone = tagItem.cloneNode(true);
@@ -32,3 +33,47 @@ removeBtn.onclick = function() {
         tagIcons[i].parentElement.classList.add("hidden");
     }
 }
+
+*/
+function checkTagExist(value) {
+    if (value) {
+        for (let i = 0; i < tags.length; i++) {
+            if (value.trim() === tags[i]) return false;
+        }
+        return true;
+    }
+}
+
+function reRender() {
+    tagList.innerHTML = '';
+    for (let i = 0; i < tags.length; i++) {
+        tagList.innerHTML += `
+        <div class="tags__item">
+            <span class="tags__name">${tags[i]}</span>
+            <i class='bx bx-x tags__icon' onclick = 'removeTag(${i})'></i>
+        </div>`;
+    }
+    tagInput.focus()
+}
+
+tagInput.addEventListener('keydown', (e) => {
+    if (e.key == 'Enter') {
+        if (checkTagExist(tagInput.value)) {
+            tags.push(tagInput.value.trim());
+            tagInput.value = "";
+            reRender();
+        } else tagInput.value = "";
+    }
+})
+
+function removeTag(i) {
+    tags.splice(i, 1);
+    reRender();
+}
+
+function removeAllTag() {
+    tags = [];
+    reRender();
+}
+
+removeBtn.addEventListener('click', removeAllTag);
