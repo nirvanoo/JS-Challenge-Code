@@ -42,6 +42,7 @@ function checkTagExist(value) {
         }
         return true;
     }
+    return false;
 }
 
 function reRender() {
