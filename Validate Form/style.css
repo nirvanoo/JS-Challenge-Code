@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    background-color: #6EBF8B;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+input {
+    color: #333;
+    font-family: inherit;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+}
+
+
+/* Register */
+
+.app {
+    height: 100%;
+    background-image: linear-gradient(to right, #37E2D5, #590696);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    width: 30rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #333;
+}
+
+.register__title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.register__form {
+    margin-bottom: 2rem;
+}
+
+.register__item {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.register__input {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #adadad;
+}
+
+.register__msg--error {
+    display: block;
+    height: 2rem;
+    font-weight: 500;
+    margin-top: .5rem;
+    color: #F94C66;
+}
+
+.register__item--error .register__item-bottom {
+    width: 100%;
+    border-bottom: 2px solid #F94C66;
+}
+
+.register__item--error .register__msg--error {
+    height: auto;
+}
+
+.register__item-bottom {
+    position: absolute;
+    border-bottom: 2px solid #590696;
+    top: 2.5rem;
+    right: 0;
+    width: 0;
+    transition: all 0.5s;
+}
+
+.register__input:focus~.register__item-bottom {
+    width: 100%;
+}
+
+.register__submit {
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    background-color: #590696;
+    padding: .5rem;
+    color: #fff;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.register__link-signup {
+    text-align: center;
+}
+
+.register__text {}
+
+.register__link {
+    color: #590696;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.register__link:hover {
+    color: #37E2D5;
+}
+
+.register__submit:hover {
+    background-color: #37E2D5;
+    color: #222;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}

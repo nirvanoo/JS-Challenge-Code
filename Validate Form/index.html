@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Validate Form</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="register">
+            <div class="register__title">
+                Register
+            </div>
+            <form class="register__form" method="" action="">
+                <div class="register__item">
+                    <input type="text" name="username" id="username" class="register__input" placeholder="Username" required>
+                    <small class="register__msg--error"></small>
+                    <span class="register__item-bottom"></span>
+                </div>
+                <div class="register__item">
+                    <input type="email" name="email" id="email" class="register__input" required placeholder="Email">
+                    <small class="register__msg--error"></small>
+                    <span class="register__item-bottom"></span>
+                </div>
+                <div class="register__item">
+                    <input type="password" name="password" id="password" class="register__input" required placeholder="Password">
+                    <small class="register__msg--error"></small>
+                    <span class="register__item-bottom"></span>
+                </div>
+                <div class="register__item">
+                    <input type="password" name="repassword" id="confirm-password" class="register__input" required placeholder="Confirm Password">
+                    <small class="register__msg--error"></small>
+                    <span class="register__item-bottom"></span>
+                </div>
+
+                <input type="submit" value="Login" class="register__submit">
+            </form>
+            <div class="register__link-signup">
+                <span class="register__text">Not a member?</span>
+                <a href="#" class="register__link">Signup</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./process.js"></script>
+
+</html>
