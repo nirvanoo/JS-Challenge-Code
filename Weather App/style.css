@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url(./assets/img/warm.avif) no-repeat center/cover;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+
+/* Weather app */
+
+.app {
+    width: 120rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-shadow: 0px 0px 3px #333;
+}
+
+.weather {
+    width: 25rem;
+    height: 40rem;
+    text-align: center;
+    padding: 2rem;
+    background: url(./assets/img/warm.avif) no-repeat center/cover;
+    border-radius: 1rem;
+}
+
+.cold {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url(./assets/img/cold.avif) no-repeat center/cover;
+}
+
+.cold .app .weather {
+    background: url(./assets/img/cold.avif) no-repeat center/cover;
+}
+
+.cool {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url(./assets/img/cool.avif) no-repeat center/cover;
+}
+
+.cool .app .weather {
+    background: url(./assets/img/cool.avif) no-repeat center/cover;
+}
+
+.warm {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url(./assets/img/warm.avif) no-repeat center/cover;
+}
+
+.warm .app .weather {
+    background: url(./assets/img/warm.avif) no-repeat center/cover;
+}
+
+.hot {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url(./assets/img/hot.avif) no-repeat center/cover;
+}
+
+.hot .app .weather {
+    background: url(./assets/img/hot.avif) no-repeat center/cover;
+}
+
+.weather__search {
+    width: 100%;
+}
+
+.weather__input {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 0 1rem 0 1rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+    transition: all 0.3s linear;
+}
+
+.weather__input:focus {
+    border-radius: 1rem 0 1rem 0;
+    background-color: #fff;
+}
+
+.weather__content {
+    margin-top: 2rem;
+    text-shadow: inherit;
+}
+
+.weather__address {}
+
+.weather__city {}
+
+.weather__country {}
+
+.weather__date {
+    font-size: 1.3rem;
+    text-shadow: inherit;
+}
+
+.weather__temperate {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    width: 15rem;
+    margin: 1rem auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 3px 0 1px rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+}
+
+.weather__heading {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.weather__body {
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.weather__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}

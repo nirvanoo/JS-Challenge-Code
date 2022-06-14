@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="weather">
+            <div class="weather__search">
+                <input type="text" name="search" id="search" class="weather__input" placeholder="City">
+            </div>
+            <div class="weather__content">
+                <h2 class="weather__address">
+                    <span class="weather__city">Hanoi</span>
+                    <span> , </span>
+                    <span class="weather__country">VN</span>
+                    </h3>
+                    <div class="weather__date">
+                        20:23:27, 14/6/2022
+                    </div>
+                    <div class="weather__temperate">
+                        <span class="weather__number-temparate">10</span>
+                        <sup>o</sup>
+                        <span class="weather__celsius">C</span>
+                    </div>
+                    <div class="weather__status">
+                        <h3 class="weather__heading">
+                            Clouds
+                        </h3>
+                        <div class="weather__body">
+                            <div class="weather__item">
+                                <div class="weather__icon">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div class="weather__visibility">
+                                    <span class="weahter__number-visibility">1000</span>
+                                    <span> (m)</span>
+                                </div>
+                            </div>
+                            <div class="weather__item">
+                                <div class="weather__icon">
+                                    <i class="fa-solid fa-wind"></i>
+                                </div>
+                                <div class="weather__wind">
+                                    <span class="weather__number-wind">11</span>
+                                    <span> (m/s)</span>
+                                </div>
+                            </div>
+                            <div class="weather__item">
+                                <div class="weather__icon">
+                                    <i class="fa-solid fa-droplet"></i>
+                                </div>
+                                <div class="weather__wind">
+                                    <span class="weather__number-humidity">20</span>
+                                    <span> (%)</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./process.js"></script>
+
+</html>
